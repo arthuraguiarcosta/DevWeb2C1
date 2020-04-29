@@ -67,7 +67,7 @@ router.patch('/users/:id', (req,res) => {
   const altura = req.body.altura.substring(0,50);
   const peso = req.body.peso.substring(0,200);
   const saude = req.body.saude.substring(0,50);
-  execQuery(`UPDATE Users SET nome='${nome}', email='${email}', '${telefone}', '${altura}', '${peso}', '${saude}' WHERE id = '${req.params.id}';`, res);
+  execQuery(`UPDATE Users SET nome = '${nome}', email = '${email}', telefone = '${telefone}', altura = '${altura}', peso = '${peso}', saude = '${saude}', WHERE id = '${req.params.id}';`, res);
 });
 
 //Iniciando o servidor
