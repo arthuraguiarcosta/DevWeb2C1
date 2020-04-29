@@ -42,7 +42,7 @@ function populateUsers(conn){
         let altura = (Math.random() * 0.45 + 1.50).toString+"m";  
         let peso = (Math.random() * 80 + 45).toString+"kg";  
         let arraySaude = ["Saúde OK","COVID 19","Dengue","Virose","Obesidade"]
-        let saude = arrSaude[Math.floor(Math.random() * arr.length)];  
+        let saude = arraySaude[Math.floor(Math.random() * arraySaude.length)];  
         values.push([faker.name.findName(), faker.internet.email(), faker.phone.phoneNumber(), altura, peso, saude]);
     }
 
